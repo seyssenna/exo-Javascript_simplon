@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Créer votre compte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main class="consignes">
+      <h1>Consignes</h1>
+      <section>
+        <p>
+          Un designer vous a demandé d'ajouter des contraintes de validation
+          suivantes au formulaire :
+        </p>
+        <ul>
+          <li>Tous les champs sont requis</li>
+          <li>Les deux mots de passes doivent être identiques</li>
+          <li>
+            L'utilisateur ne doit pas pouvoir choisir un nom d'utilisateur déjà
+            enregistré (voir main.js)
+          </li>
+        </ul>
+        <p>
+          Dans l'idéal, on ne mélangera pas les affichages natifs d'erreurs de
+          validation HTML5 et d'erreurs "custom" dans des balises HTML
+          (c'est-à-dire soit tout l'un soit tout l'autre).
+        </p>
+        <p>
+          <i
+            >Bonus : s'il on n'utilise pas l'affichage HTML natif, les erreurs
+            s'affichent en rouge, ainsi q'une bordure rouge autour des inputs
+            invalides.</i
+          >
+        </p>
+      </section>
+      <section>
+        <p>
+          De plus, pendant que l'utilisateur tape son mot de passe, on lui
+          indique la sécurité de son mot de passe :
+        </p>
+        <ul>
+          <li>0 à 4 caractères : très faible</li>
+          <li>4 à 8 caractères : faible</li>
+          <li>8 à 12 caractères : bonne</li>
+          <li>plus de 12 caractères : très bonne</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

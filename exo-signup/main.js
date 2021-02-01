@@ -1,4 +1,4 @@
-const existingUsernames = ["kim", "emmanuel", "nicolas"];
+const alreadyRegisteredUsernames = ["kim", "emmanuel", "nicolas"];
 
 document.querySelector("form").addEventListener("submit", () => {
   // avant d'envoyer les données au serveur, on peut faire une étape de validation

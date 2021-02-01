@@ -2,12 +2,17 @@
   font-family: "Open Sans", sans-serif;
 }
 
-body {
+body.formPage {
   display: grid;
   place-items: center;
 }
 
-h1 {
+a[href="consignes.html"] {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.formPage h1 {
   border: 2px solid black;
   border-bottom: none;
   border-top-left-radius: 1rem;
@@ -67,4 +72,22 @@ button[type="submit"] {
   border: none;
   padding: 0.75rem 1rem;
   font-weight: bold;
+}
+
+.consignes {
+  max-width: 75ch;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.consignes > * + * {
+  margin-top: 3rem;
+}
+
+.consignes section > * + * {
+  margin-top: 1rem;
+}
+
+.consignes ul > li + li {
+  margin-top: 1rem;
 }
