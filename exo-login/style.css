@@ -1,0 +1,70 @@
+:root {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  border: 2px solid black;
+  border-bottom: none;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 1rem 4rem;
+  background: #eee;
+}
+
+label,
+input,
+button {
+  display: block;
+}
+
+label[for="toggle-password-visibility"] {
+  margin-left: 0.25rem;
+}
+
+.checkbox-group {
+  font-size: 0.75rem;
+  display: flex;
+}
+
+form {
+  padding: 4rem;
+  padding-top: 3rem;
+  border: 2px solid;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+form > * + * {
+  margin-top: 1.25rem;
+}
+
+.input-group > * + * {
+  margin-top: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.show-password {
+  border: none;
+  background: none;
+  font-size: 0.75rem;
+}
+.show-password:hover {
+  text-decoration: underline;
+}
+
+button[type="submit"] {
+  margin-top: 2rem;
+  background: black;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+}

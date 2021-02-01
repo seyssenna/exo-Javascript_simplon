@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page de connexion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Connexion</h1>
+      <form>
+        <div class="input-group">
+          <label for="username">Nom d'utilisateur</label>
+          <input id="username" name="username" />
+          <div class="error-username"></div>
+        </div>
+        <div class="input-group">
+          <label for="password">Mot de passe</label>
+          <input id="password" name="password" type="password" />
+          <div class="checkbox-group">
+            <input
+              id="toggle-password-visibility"
+              name="toggle-password-visibility"
+              type="checkbox"
+            />
+            <label for="toggle-password-visibility">
+              montrer le mot de passe
+            </label>
+          </div>
+          <div class="error-password"></div>
+        </div>
+        <button type="submit">Se connecter</button>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
