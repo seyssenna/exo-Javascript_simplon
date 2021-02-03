@@ -91,3 +91,10 @@ button[type="submit"] {
 .consignes ul > li + li {
   margin-top: 1rem;
 }
+
+.redBorder{
+  border: solid red 2px;
+}
+.red{
+  color: red;
+}
