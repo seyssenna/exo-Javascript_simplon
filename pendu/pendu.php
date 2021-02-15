@@ -5,6 +5,16 @@ $wrongLetters = [];
 $goodLetters = [];
 $guessed = false;
 
+foreach(str_split($word) as $letter) {
+  if (in_array($letter, $goodLetters)) {
+    echo "$letter ";
+  } else {
+    $allLetters = false;
+    echo "_ ";
+  }
+}
+echo "\n";
+
 while (!$guessed && count($wrongLetters) < 5) {
   $guess = readline("Entrez une lettre : ");
 
@@ -18,6 +28,7 @@ while (!$guessed && count($wrongLetters) < 5) {
     }
   }
 
+  echo "\nmauvaises lettres : ";
   foreach($wrongLetters as $wrongLetter) {
     echo "$wrongLetter ";
   }
