@@ -8,10 +8,8 @@ $height = 20;
 $x= 30;
 $y = 4;
 
-// la map contient tous les caractères à afficher
 $map = [];
 
-// la barre supérieur
 for($i = 0; $i < $height; $i++) {
   for($j = 0; $j < $width; $j++) {
     $map[$i][$j] = " ";
@@ -36,7 +34,6 @@ $direction = "RIGHT";
 
 while(true) {
   fwrite(STDOUT, "\033[0;0f"); // move cursor to start
-
   for($i = 0; $i < $height; $i++) {
     for($j = 0; $j < $width; $j++) {
         fwrite(STDOUT, $map[$i][$j]);
