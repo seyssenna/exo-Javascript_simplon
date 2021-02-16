@@ -16,7 +16,10 @@ foreach(str_split($word) as $letter) {
 echo "\n";
 
 while (!$guessed && count($wrongLetters) < 5) {
+  echo "\n";
   $guess = readline("Entrez une lettre : ");
+
+  echo "\n\n";
 
   if (strpos($word, $guess) === false) {
     if (!in_array($guess, $wrongLetters)) {
@@ -27,12 +30,6 @@ while (!$guessed && count($wrongLetters) < 5) {
       $goodLetters[] = $guess;
     }
   }
-
-  echo "\nmauvaises lettres : ";
-  foreach($wrongLetters as $wrongLetter) {
-    echo "$wrongLetter ";
-  }
-  echo "\n";
 
   $allLetters = true;
   foreach(str_split($word) as $letter) {
@@ -45,14 +42,20 @@ while (!$guessed && count($wrongLetters) < 5) {
   }
   echo "\n";
 
+  if (count($wrongLetters)) {
+    echo "\n[";
+    echo implode(",", $wrongLetters);
+    echo "]\n";
+  }
+
   if ($allLetters) {
     $guessed = true;
   }
 }
 
 if (count($wrongLetters) == 5) {
-  echo "Perdu !\n";
+  echo "\nPerdu !\n";
 }
 if ($guessed) {
-  echo "Gagné !\n";
+  echo "\nGagné !\n";
 }
