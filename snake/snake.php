@@ -41,14 +41,16 @@ while(true) {
     fwrite(STDOUT, PHP_EOL);
   }
 
+  // vitesse de deplacement
   usleep(60000);
 
+  // lis la touche qui est tapé et attribut la direction a "$input"
   $input = readInput();
   switch($input) {
-    case "z":
+    case "w":
       $direction = "UP";
       break;
-    case "q":
+    case "a":
       $direction = "LEFT";
       break;
     case "d":
@@ -59,6 +61,7 @@ while(true) {
       break;
   }
 
+  // choisis la direction du snake en fonction de la touche qui est tapé
   $map[$y][$x] = $previousChar;
   switch($direction) {
     case "UP":
@@ -89,3 +92,4 @@ function readInput() {
 
   return $char;
 }
+

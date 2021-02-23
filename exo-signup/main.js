@@ -100,7 +100,7 @@ document.querySelector("form").addEventListener("submit", (event) =>{
     confirmPwd.classList.add("redBorder");
     errorConfirmPwd.classList.add("red");
   }
-  // test de confirmation du password
+  // test de confirmation du password identique
   if (password.value != "" && confirmPwd.value != "" && password.value != confirmPwd.value) {
     isValid = false;
     event.preventDefault();
